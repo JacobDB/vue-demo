@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta name="charset" value="utf-8">
+        <title>Vue Demo</title>
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+
+    <body>
+        <div id="app6">
+            <p>{{ message }}</p>
+            <input v-model="message" />
+        </div>
+
+        <script>
+            let app6 = new Vue({
+                el: "#app6",
+                data: {
+                    message: "Hello Vue!",
+                }
+            });
+        </script>
+    </body>
+</html>
