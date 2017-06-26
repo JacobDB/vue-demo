@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta name="charset" value="utf-8">
+        <title>Vue Demo</title>
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+
+    <body>
+        <div id="app3">
+            <p v-if="seen">Now you see me</p>
+        </div>
+
+        <script>
+            let app3 = new Vue({
+                el: "#app3",
+                data: {
+                    seen: true,
+                }
+            });
+        </script>
+    </body>
+</html>
