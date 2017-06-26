@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta name="charset" value="utf-8">
+        <title>Vue Demo</title>
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+
+    <body>
+        <div id="app2">
+            <span v-bind:title="message">
+                Hover your mouse over me for a few seconds to see my dynamically bound title!
+            </span>
+        </div>
+
+        <script>
+            let app2 = new Vue({
+                el: "#app2",
+                data: {
+                    message: "You loaded this page on " + new Date(),
+                }
+            });
+        </script>
+    </body>
+</html>
